@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kk.mybatis.plus.quickstart.mapper.StudentMapper">
+
+
+    <select id="selectMy" resultType="com.kk.mybatis.plus.quickstart.entity.Student">
+        select * from student
+    </select>
+
+    <select id="selectByGrade" resultType="com.kk.mybatis.plus.quickstart.entity.Student">
+       select  * from student  st
+        left join  class cl on cl.cid = st.class_id
+        left join  grade gr on gr.gid = cl.grade_id
+       <where>
+           <if test="null != ew.id">
+               st.sid = #{ew.id}
+           </if>
+           <if test="null != ew.gender ">
+               and st.gender =#{ew.gender}
+           </if>
+           <if test="null != ew.gid">
+               and gr.gid =#{ew.gid}
+           </if>
+
+       </where>
+    </select>
+
+</mapper>

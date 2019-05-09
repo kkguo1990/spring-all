@@ -1,0 +1,19 @@
+
+server:
+  port: 8084
+
+
+dubbo:
+  protocol:
+    port: 20882 #根据需求改动
+  registry:
+    address: zookeeper://192.168.65.140:32181   #zookeeper 地址
+  metadata-report:
+    address: zookeeper://192.168.65.140:32181
+  application:
+    name: provier
+  scan:
+    base-packages: com.kk.dubbo  # 这个目前版本要加
+
+
+

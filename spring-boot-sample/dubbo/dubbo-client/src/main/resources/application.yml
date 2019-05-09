@@ -1,0 +1,10 @@
+
+
+
+dubbo:
+  registry:
+    address: zookeeper://192.168.65.140:32181
+  application:
+    name: consumer
+server:
+  port: 8085

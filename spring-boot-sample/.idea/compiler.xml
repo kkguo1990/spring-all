@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="code-generator" />
+        <module name="commonapi" />
+        <module name="demo" />
+        <module name="dubbo-client" />
+        <module name="dubbo-server" />
+        <module name="dynamic-datasource" />
+        <module name="mybatis" />
+        <module name="quickstart" />
+        <module name="redis" />
+        <module name="shiro" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dubbo-zookeeper" target="1.5" />
+      <module name="multiple-data" target="1.8" />
+      <module name="mybatis" target="1.5" />
+      <module name="mybatis-plus" target="1.8" />
+      <module name="mybatis-sample" target="1.8" />
+      <module name="ShiroJwt" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
