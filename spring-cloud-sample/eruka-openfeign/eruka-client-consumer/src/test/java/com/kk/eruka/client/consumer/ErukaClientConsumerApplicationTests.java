@@ -15,7 +15,7 @@ public class ErukaClientConsumerApplicationTests {
 
     @Test
     public void contextLoads() {
-        String hello = schedualServiceHi.sayHiFromClientOne("hello");
+        String hello = schedualServiceHi.sayHiFromClientOne("consumer say hi");
         System.out.println(hello);
     }
 

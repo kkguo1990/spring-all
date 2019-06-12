@@ -1,0 +1,15 @@
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8769
+spring:
+  application:
+    name: service-zuul
+zuul:
+  routes:
+    api-b:
+      path: /api-b/**  #配置这个服务的前缀api
+      serviceId: service-feign  #这个是服务eureka client 注册的服务id
